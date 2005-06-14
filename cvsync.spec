@@ -1,27 +1,35 @@
-
 Summary:	Tailor, the VCS sync tool
+Summary(pl):	Tailor - narzêdzie do synchronizacji systemów kontroli wersji
 Name:		cvsync
 Version:	0
 %define codate 20050612
 Release:	0.%{codate}.1
 License:	Free
+Group:		Development/Version Control
 Source0:	cvsync-%{codate}.tar.gz
 # Source0-md5:	b3d7d184ecbf95278dc8112d67f48cfe
 URL:		http://darcs.net/DarcsWiki/Tailor
-Group:		Development/Version Control
 BuildRequires:	python
 BuildRequires:	python-devel >= 2.2
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-A Python tool able to keep in sync various kinds of repository: it works for various revision control systems, digesting patches coming from three different VC, CVS, Subversion, Darcs and (still partially) Monotone and Codeville, preserving history.
+A Python tool able to keep in sync various kinds of repository: it
+works for various revision control systems, digesting patches coming
+from three different VC, CVS, Subversion, Darcs and (still partially)
+Monotone and Codeville, preserving history.
+
+%description -l pl
+Narzêdzie w Pythonie potrafi±ce synchronizowaæ ró¿ne rodzaje
+repozytoriów - dzia³a z ró¿nymi systemami kontroli wersji, zbieraj±c
+³aty nadchodz±ce z trzech ró¿nych VC: CVS, Subversion, Darcs oraz
+(jeszcze czê¶ciowo) Monotone i Codeville, zachowuj±c historiê.
 
 %prep
 %setup -q -n %{name}
 
 %build
-CFLAGS="%{rpmcflags}"
-export CFLAGS
 python setup.py build
 
 %install
