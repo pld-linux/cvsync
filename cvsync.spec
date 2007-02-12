@@ -1,5 +1,5 @@
 Summary:	Tailor, the VCS sync tool
-Summary(pl):	Tailor - narzêdzie do synchronizacji systemów kontroli wersji
+Summary(pl.UTF-8):   Tailor - narzÄ™dzie do synchronizacji systemÃ³w kontroli wersji
 Name:		cvsync
 Version:	0
 %define codate 20050612
@@ -20,11 +20,11 @@ works for various revision control systems, digesting patches coming
 from three different VC, CVS, Subversion, Darcs and (still partially)
 Monotone and Codeville, preserving history.
 
-%description -l pl
-Narzêdzie w Pythonie potrafi±ce synchronizowaæ ró¿ne rodzaje
-repozytoriów - dzia³a z ró¿nymi systemami kontroli wersji, zbieraj±c
-³aty nadchodz±ce z trzech ró¿nych VC: CVS, Subversion, Darcs oraz
-(jeszcze czê¶ciowo) Monotone i Codeville, zachowuj±c historiê.
+%description -l pl.UTF-8
+NarzÄ™dzie w Pythonie potrafiÄ…ce synchronizowaÄ‡ rÃ³Å¼ne rodzaje
+repozytoriÃ³w - dziaÅ‚a z rÃ³Å¼nymi systemami kontroli wersji, zbierajÄ…c
+Å‚aty nadchodzÄ…ce z trzech rÃ³Å¼nych VC: CVS, Subversion, Darcs oraz
+(jeszcze czÄ™Å›ciowo) Monotone i Codeville, zachowujÄ…c historiÄ™.
 
 %prep
 %setup -q -n %{name}
