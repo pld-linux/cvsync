@@ -1,5 +1,5 @@
 Summary:	Tailor, the VCS sync tool
-Summary(pl.UTF-8):   Tailor - narzędzie do synchronizacji systemów kontroli wersji
+Summary(pl.UTF-8):	Tailor - narzędzie do synchronizacji systemów kontroli wersji
 Name:		cvsync
 Version:	0
 %define codate 20050612
