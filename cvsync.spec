@@ -9,6 +9,7 @@ Group:		Development/Version Control
 Source0:	cvsync-%{codate}.tar.gz
 # Source0-md5:	b3d7d184ecbf95278dc8112d67f48cfe
 URL:		http://darcs.net/DarcsWiki/Tailor
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	python
 BuildRequires:	python-devel >= 2.2
 BuildArch:	noarch
